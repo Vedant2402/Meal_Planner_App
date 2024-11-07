@@ -39,13 +39,11 @@ If a controller does not have its own model but depends on another model to func
 Models do not import other models (using the import statement).
 
 /mealplan-app
+
 │
-├── /routes  
-              
+├── /routes               
 │   ├── user.js                # User related routes
-
 │   ├── mealplan.js            # Mealplan related routes
-
 │   └── meal.js                # Meal related routes
 
 │
