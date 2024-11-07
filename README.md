@@ -40,28 +40,45 @@ Models do not import other models (using the import statement).
 
 /mealplan-app
 │
-├── /routes                
+├── /routes  
+              
 │   ├── user.js                # User related routes
+
 │   ├── mealplan.js            # Mealplan related routes
+
 │   └── meal.js                # Meal related routes
+
 │
 ├── /controllers         
+
 │   ├── user.js                # Handles user operations
+
 │   ├── mealplan.js            # Handles mealplan operations
+
 │   └── meal.js                # Handles meal search operations
+
 │
 ├── /models                
+
 │   ├── User.js                # User schema + model
+
 │   └── Mealplan.js            # Mealplan schema + model
+
 │
 ├── /middleware            
+
 │   └── authorization.js       # JWT verification for protected routes
+
 │
 ├── /utils                
+
 │   └── auth.js                # Auth hash and compare + JWT sign and verify
+
 │
 ├── /db               
 │   └── connection.js          # Connection function to MongoDB
+
 │
 ├── .env                       # Environment variables (Spoonacular API, DB connection, JWT secret)
+
 ├── app.js                     # Starts the app and connect to MongoDB
