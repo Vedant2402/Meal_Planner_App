@@ -1,0 +1,182 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "MealPlannerApp",
+    "collectionId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+    "dateExported": "2024-12-12T20:49:26.369Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-10-06T00:50:46.694Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5cc5c68c-2125-4215-979c-05c391a74bcd",
+            "name": "Meals",
+            "containerId": "",
+            "created": "2024-10-06T00:51:20.285Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "c3bf4094-22bf-4f9c-9cc2-f9db6ff4cc7a",
+            "name": "Mealplans",
+            "containerId": "",
+            "created": "2024-10-06T00:51:33.960Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3c1ea5c6-1bef-4706-ac71-4d4a1b77633c",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "5cc5c68c-2125-4215-979c-05c391a74bcd",
+            "name": "GET /Meals",
+            "url": "http://localhost:8080/meals/search?meal=american&diets=veg",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-10-05T22:54:10.473Z",
+            "modified": "2024-12-10T23:05:28.369Z",
+            "headers": [
+                {
+                    "name": "apiKey",
+                    "value": "SPOONACULAR_API_KEY"
+                }
+            ],
+            "params": [
+                {
+                    "name": "meal",
+                    "value": "american",
+                    "isPath": false
+                },
+                {
+                    "name": "diets",
+                    "value": "veg",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzM4NzE4NTYsImV4cCI6MTczMzk1ODI1Nn0.X7VHvgVhQG40BK0MDnnZw10hE_f5ZVAL9cEXlEyNpgU"
+            }
+        },
+        {
+            "_id": "c09d414b-da65-439c-85ae-eac507554ceb",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "c3bf4094-22bf-4f9c-9cc2-f9db6ff4cc7a",
+            "name": "POST /mealplans",
+            "url": "http://localhost:8080/mealplans/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-05T22:54:16.244Z",
+            "modified": "2024-12-10T23:21:26.016Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"week\": 3,\n  \"mealId\": 716429,\n  \"name\": \"Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs\",\n  \"diets\": [\"dairy free\",\n          \"lacto ovo vegetarian\",\n          \"vegan\"],\n  \"image\": \"https://img.spoonacular.com/recipes/716429-556x370.jpg\"\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzM4NzI4MDYsImV4cCI6MTczMzk1OTIwNn0.hfz462Hzbvtkky4dnyGn63cgbsabO-dgVlPrueFKzXI"
+            }
+        },
+        {
+            "_id": "b8dff5cb-a438-410d-b305-903d1351da4a",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "POST /users/register",
+            "url": "localhost:8080/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-05T22:54:27.155Z",
+            "modified": "2024-12-12T04:45:52.415Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"austin\",\n  \"password\": \"12345\",\n  \"preferences\": [\"dairy free\"]\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "a8308a91-7794-40f5-9c6e-08ea26d57ac4",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "POST/users/login",
+            "url": "localhost:8080/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-06T06:49:34.803Z",
+            "modified": "2024-12-12T04:45:38.222Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jay\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9a52a8c4-75c3-4696-a42b-41bfe94ec128",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "GET /users/:id",
+            "url": "http://localhost:8080/users/673c11f57c05e8ce628fee58",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-10-06T14:57:07.225Z",
+            "modified": "2024-12-10T23:20:17.104Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzM4NzI4MDYsImV4cCI6MTczMzk1OTIwNn0.hfz462Hzbvtkky4dnyGn63cgbsabO-dgVlPrueFKzXI"
+            }
+        },
+        {
+            "_id": "78e5b541-a1d6-42e7-ab55-0acc2a226347",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "PUT /users/:id",
+            "url": "http://localhost:8080/users/6757981d4913d978abcb6dc3?preferences=[Dairy]",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-10-06T20:20:23.920Z",
+            "modified": "2024-12-10T02:45:03.649Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByb2ZfYXVtYW4iLCJ1c2VyX2lkIjoiNjczNTNhNmQyNGFhNjNiZjc2N2VmZmNjIiwiaWF0IjoxNzMxNjIzMjg5LCJleHAiOjE3MzE3MDk2ODl9.i8nMCs7tQIogaJ2Nwamq64UT8BJTa_-q7f2qiJELLTI",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "preferences",
+                    "value": "[Dairy]",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbmthdGUiLCJ1c2VyX2lkIjoiNjc1Nzk4MWQ0OTEzZDk3OGFiY2I2ZGMzIiwiaWF0IjoxNzMzNzk1MDczLCJleHAiOjE3MzM4ODE0NzN9.mMtUVQ2FdLbwcoVJJGKIaZ8AwPImFW_Ukc3gn_SSzdM"
+            }
+        },
+        {
+            "_id": "5ade2ee4-d094-417c-9c12-50edbf13a789",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "c3bf4094-22bf-4f9c-9cc2-f9db6ff4cc7a",
+            "name": "DELETE  /mealplans/:id",
+            "url": "http://localhost:8080/mealplans/673c11f57c05e8ce628fee58",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-10-06T20:39:52.789Z",
+            "modified": "2024-12-10T21:51:35.824Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzM4Njc0NTUsImV4cCI6MTczMzk1Mzg1NX0.aaMUvdz6_ytykv5mdYT3bTJ8A-NdUkPTzMq6cnKXx1A"
+            }
+        }
+    ],
+    "ref": "IIJ7QjQ5cdO7EcV6g2IZu9ospLgFMVdh69hwVpc7xEy5RULUI137pyq2AHzvjmgrxPquqoMxdX1LJLAOfP6q9w"
+}

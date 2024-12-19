@@ -1,0 +1,180 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "MealPlannerApp",
+    "collectionId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+    "dateExported": "2024-11-19T19:02:25.945Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-10-06T00:50:46.694Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5cc5c68c-2125-4215-979c-05c391a74bcd",
+            "name": "Meals",
+            "containerId": "",
+            "created": "2024-10-06T00:51:20.285Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "c3bf4094-22bf-4f9c-9cc2-f9db6ff4cc7a",
+            "name": "Mealplans",
+            "containerId": "",
+            "created": "2024-10-06T00:51:33.960Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3c1ea5c6-1bef-4706-ac71-4d4a1b77633c",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "5cc5c68c-2125-4215-979c-05c391a74bcd",
+            "name": "GET /Meals",
+            "url": "http://localhost:8080/meals/search?meal=american&diets=veg",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-10-05T22:54:10.473Z",
+            "modified": "2024-11-19T18:48:20.337Z",
+            "headers": [
+                {
+                    "name": "apiKey",
+                    "value": "SPOONACULAR_API_KEY"
+                }
+            ],
+            "params": [
+                {
+                    "name": "meal",
+                    "value": "american",
+                    "isPath": false
+                },
+                {
+                    "name": "diets",
+                    "value": "veg",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzIwNDIwNDIsImV4cCI6MTczMjEyODQ0Mn0.98JZDQvFSrT34nCPFSvWE9hhloyM9n69mbmiZoo-ccE"
+            }
+        },
+        {
+            "_id": "c09d414b-da65-439c-85ae-eac507554ceb",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "c3bf4094-22bf-4f9c-9cc2-f9db6ff4cc7a",
+            "name": "POST /mealplans",
+            "url": "http://localhost:8080/mealplans/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-05T22:54:16.244Z",
+            "modified": "2024-11-19T18:52:44.219Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"week\": 1,\n  \"mealId\": 1095755,\n  \"name\": \"Quinoa and Kidney Bean Burgers\",\n  \"diets\": [\"dairy free\",\n      \"lacto ovo vegetarian\",\n      \"vegan\"],\n  \"image\": \"https://img.spoonacular.com/recipes/1095755-312x231.jpg\"\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzIwNDIwNDIsImV4cCI6MTczMjEyODQ0Mn0.98JZDQvFSrT34nCPFSvWE9hhloyM9n69mbmiZoo-ccE"
+            }
+        },
+        {
+            "_id": "b8dff5cb-a438-410d-b305-903d1351da4a",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "POST /users/register",
+            "url": "localhost:8080/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-05T22:54:27.155Z",
+            "modified": "2024-11-19T04:20:05.284Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Austin\",\n  \"password\": \"12345\",\n  \"preferences\": [\"dairy free\"]\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "a8308a91-7794-40f5-9c6e-08ea26d57ac4",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "POST/users/login",
+            "url": "localhost:8080/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-06T06:49:34.803Z",
+            "modified": "2024-11-19T04:20:47.016Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"austin\",\n  \"password\": \"12345\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9a52a8c4-75c3-4696-a42b-41bfe94ec128",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "GET /users/:id",
+            "url": "http://localhost:8080/users/673c11f57c05e8ce628fee58",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-10-06T14:57:07.225Z",
+            "modified": "2024-11-19T18:47:34.236Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzIwNDIwNDIsImV4cCI6MTczMjEyODQ0Mn0.98JZDQvFSrT34nCPFSvWE9hhloyM9n69mbmiZoo-ccE"
+            }
+        },
+        {
+            "_id": "78e5b541-a1d6-42e7-ab55-0acc2a226347",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "1a61653a-b0d3-48c3-87d7-ca3af8b61fc9",
+            "name": "PUT /users/:id",
+            "url": "http://localhost:8080/users/673c11f57c05e8ce628fee58",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-10-06T20:20:23.920Z",
+            "modified": "2024-11-19T18:47:43.527Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByb2ZfYXVtYW4iLCJ1c2VyX2lkIjoiNjczNTNhNmQyNGFhNjNiZjc2N2VmZmNjIiwiaWF0IjoxNzMxNjIzMjg5LCJleHAiOjE3MzE3MDk2ODl9.i8nMCs7tQIogaJ2Nwamq64UT8BJTa_-q7f2qiJELLTI",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"preferences\": [\"Vegan, Lactose, Keto\"]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzE5OTAwNDYsImV4cCI6MTczMjA3NjQ0Nn0.Tn9BGJqpJrLzCjKYMYTb3AahDb0SIs_q6NYHlbsFn-Y"
+            }
+        },
+        {
+            "_id": "5ade2ee4-d094-417c-9c12-50edbf13a789",
+            "colId": "f70a1e44-a3f3-46fc-ba7e-9f450b5d2bb6",
+            "containerId": "c3bf4094-22bf-4f9c-9cc2-f9db6ff4cc7a",
+            "name": "DELETE  /mealplans/:id",
+            "url": "http://localhost:8080/mealplans/673c11f57c05e8ce628fee58",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-10-06T20:39:52.789Z",
+            "modified": "2024-11-19T04:26:58.872Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF1c3RpbiIsInVzZXJfaWQiOiI2NzNjMTFmNTdjMDVlOGNlNjI4ZmVlNTgiLCJpYXQiOjE3MzE5OTAwNDYsImV4cCI6MTczMjA3NjQ0Nn0.Tn9BGJqpJrLzCjKYMYTb3AahDb0SIs_q6NYHlbsFn-Y"
+            }
+        }
+    ],
+    "ref": "IIJ7QjQ5cdO7EcV6g2IZu7NCa5ITx2SE8wvOp5l6iCQM0Vt0suH6yLOJbow3NUxwVF91ifV81HSWdASzckf0Sg"
+}
