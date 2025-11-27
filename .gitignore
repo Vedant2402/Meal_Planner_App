@@ -1,0 +1,37 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+/dist/
+**/dist/
+/build/
+/.vite/
+/.svelte-kit/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files (do not commit secrets)
+.env
+.env.*
+Server/.env
+client/.env
+**/.env
+**/.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/editor
+.vscode/
+!.vscode/extensions.json
